@@ -4,12 +4,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
-            <div className="relative min-h-screen bg-gray-100 bg-center sm:flex sm:justify-center sm:items-center bg-dots-darker dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-                <div className="p-6 text-right sm:fixed sm:top-0 sm:right-0">
+            <div className="min-h-screen flex flex-col justify-center items-center gap-2">
+                <p>Selamat datang</p>
+                <div className="flex gap-4">
                     {auth.user ? (
                         <Link
                             href={route("dashboard")}
-                            className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
+                            className="btn btn-primary btn-sm"
                         >
                             Dashboard
                         </Link>
@@ -17,23 +18,19 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         <>
                             <Link
                                 href={route("login")}
-                                className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
+                                className="btn btn-primary btn-sm"
                             >
                                 Log in
                             </Link>
 
                             <Link
                                 href={route("register")}
-                                className="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
+                                className="btn btn-primary btn-sm btn-outline"
                             >
                                 Register
                             </Link>
                         </>
                     )}
-                </div>
-
-                <div className="p-6 mx-auto max-w-7xl lg:p-8">
-                    <p>Selamat datang</p>
                 </div>
             </div>
         </>
