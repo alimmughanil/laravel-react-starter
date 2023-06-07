@@ -1,4 +1,5 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import { Link } from "@inertiajs/react";
 import React, { useState } from "react";
 
 function Index(props) {
@@ -10,13 +11,15 @@ function Index(props) {
             setOpen={setOpen}
             auth={props.auth}
         >
-            <div className="flex justify-center pt-8">
+            <div className="flex flex-col items-center justify-center gap-4 pt-8">
                 <p>
                     Selamat Datang,{" "}
                     <span className="font-semibold">
                         {props.auth.user.name}
                     </span>
                 </p>
+
+
             </div>
         </AuthenticatedLayout>
     );

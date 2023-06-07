@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers;
 
 use Inertia\Inertia;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
@@ -16,6 +15,6 @@ class DashboardController extends Controller
         $data = [
             'title' => 'Dashboard'
         ];
-        return Inertia::render('User/Dashboard/Index', $data);
+        return Inertia::render('Admin/Dashboard/Index', $data);
     }
 }
