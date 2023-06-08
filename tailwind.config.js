@@ -7,6 +7,7 @@ export default {
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
+        "./resources/views/*.blade.php",
         "./resources/js/**/*.jsx",
     ],
 
@@ -23,10 +24,10 @@ export default {
             {
                 light: {
                     ...require("daisyui/src/colors/themes")[
-                        "[data-theme=light]"
+                    "[data-theme=light]"
                     ],
-                    primary: "blue",
-                    "primary-focus": "mediumblue",
+                    primary: "#EC273A",
+                    "primary-focus": "#6B1019",
                     "--btn-text-case": "normal",
                 },
             },
