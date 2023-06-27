@@ -26,8 +26,8 @@ export default {
                     ...require("daisyui/src/colors/themes")[
                     "[data-theme=light]"
                     ],
-                    primary: "#EC273A",
-                    "primary-focus": "#6B1019",
+                    primary: "blue",
+                    "primary-focus": "mediumblue",
                     "--btn-text-case": "normal",
                 },
             },
